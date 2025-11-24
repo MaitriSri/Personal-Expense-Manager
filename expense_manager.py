@@ -2,18 +2,32 @@ class ExpenseManager:
     def __init__(self):
         self.expenses = []
 
-
     def add_expense(self):
-        # will complete next
-        print("Add expense feature coming soon.")
+        print("\n--- Add Expense ---")
+        try:
+            amount = float(input("Amount: "))
+        except:
+            print("Invalid amount")
+            return
+        
+        cat = input("Category: ")
+        desc = input("Description: ")
 
+        # storing single expense
+        data = {
+            "amount": amount,
+            "category": cat,
+            "description": desc
+        }
+
+        self.expenses.append(data)
+        print("Expense added!")
 
     def view_expenses(self):
-        print("View expenses feature coming soon.")
-
+        print("Feature not finished yet.")
 
     def summary(self):
-        print("Summary feature coming soon.")
+        print("Feature not finished yet.")
 
 
 def main():
@@ -26,15 +40,15 @@ def main():
         print("3. Summary")
         print("4. Exit")
 
-        choice = input("Enter choice: ")
+        ch = input("Enter choice: ")
 
-        if choice == "1":
+        if ch == "1":
             manager.add_expense()
-        elif choice == "2":
+        elif ch == "2":
             manager.view_expenses()
-        elif choice == "3":
+        elif ch == "3":
             manager.summary()
-        elif choice == "4":
+        elif ch == "4":
             break
         else:
             print("Invalid option")
