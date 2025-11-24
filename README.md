@@ -1,4 +1,4 @@
-# Personal Expense Manager (Python)
+# Personal Expense Manager
 
 This is a small project I made for my flipped course. The idea was to create something simple but useful using the Python basics we learned in class.
 The program basically helps to store expenses and view them later. It runs in the terminal and doesn't need any extra libraries, so anyone can run it easily.
