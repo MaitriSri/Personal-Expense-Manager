@@ -1,7 +1,8 @@
 class ExpenseManager:
     def __init__(self):
         self.expenses = []
-        
+
+
     def add_expense(self):
         print("\n--- Add Expense ---")
         try:
@@ -9,7 +10,6 @@ class ExpenseManager:
         except:
             print("Invalid amount")
             return
-
         
         cat = input("Category: ")
         desc = input("Description: ")
